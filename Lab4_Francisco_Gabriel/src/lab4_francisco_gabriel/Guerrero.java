@@ -9,7 +9,7 @@ package lab4_francisco_gabriel;
  *
  * @author Francisco Santos
  */
-public class Guerrero {
+public class Guerrero implements Complemento{
     private String nombre;
     private int edad;
     private String nacimiento;
@@ -24,9 +24,9 @@ public class Guerrero {
         this.nombre = nombre;
         this.edad = edad;
         this.nacimiento = nacimiento;
-        this.poder = poder;
-        this.salud = salud;
-        this.costo = costo;
+        this.poder = getPoder();
+        this.salud = getSalud();
+        this.costo = getCosto();
     }
 
     public String getNombre() {
@@ -58,7 +58,9 @@ public class Guerrero {
     }
 
     public void setPoder(int poder) {
-        this.poder = poder;
+        if (poder>0 && poder<=50) {
+            this.poder = poder;
+        }
     }
 
     public int getSalud() {
@@ -66,7 +68,9 @@ public class Guerrero {
     }
 
     public void setSalud(int salud) {
-        this.salud = salud;
+        if (salud>=100 && salud<=200) {
+            this.salud = salud;
+        }
     }
 
     public int getCosto() {
@@ -74,12 +78,19 @@ public class Guerrero {
     }
 
     public void setCosto(int costo) {
-        this.costo = costo;
+        if (costo>0 && costo<=300) {
+            this.costo = costo;
+        }
     }
 
     @Override
     public String toString() {
         return "Guerrero{" + "nombre=" + nombre + '}';
+    }
+
+    @Override
+    public void Atacar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
