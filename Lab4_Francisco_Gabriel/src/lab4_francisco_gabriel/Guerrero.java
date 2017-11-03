@@ -24,9 +24,9 @@ public abstract class Guerrero {
         this.nombre = nombre;
         this.edad = edad;
         this.nacimiento = nacimiento;
-        this.poder = getPoder();
-        this.salud = getSalud();
-        this.costo = getCosto();
+        this.poder =poder;
+        this.salud =salud;
+        this.costo = costo;
     }
 
     public String getNombre() {
