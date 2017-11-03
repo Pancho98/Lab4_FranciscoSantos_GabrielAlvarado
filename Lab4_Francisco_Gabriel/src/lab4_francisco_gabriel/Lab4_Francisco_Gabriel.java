@@ -24,6 +24,7 @@ public class Lab4_Francisco_Gabriel {
        static ArrayList<Jugador> jugadores=new ArrayList();
        static ArrayList<Jugador>jugadores2 = new ArrayList();
     static ArrayList<Guerrero> guerreros = new ArrayList();
+    static ArrayList <Guardar> Partidas = new ArrayList();
     
 
     public static void main(String[] args) {
@@ -35,7 +36,7 @@ public class Lab4_Francisco_Gabriel {
                     + "c.Registro de Jugardores\n"
                     + "d.Iniciar Partidad\n"
                     + "e.Listar Jugadores\n"
-                    + "f.Cargar partida"
+                    + "f.Cargar partida\n"
                     + "g.Salir\n");
             if (opcion.equalsIgnoreCase("a")) {
                 String jugadores = "";
@@ -157,7 +158,7 @@ public class Lab4_Francisco_Gabriel {
                 CrearJugador();
                 
             }
-            if (opcion.equalsIgnoreCase("d")) {
+            if (opcion.equalsIgnoreCase("e")) {
                  String eliminar ="";
               eliminar = JOptionPane.showInputDialog("MENU\n"
                         + "a.Listar Magos\n"
