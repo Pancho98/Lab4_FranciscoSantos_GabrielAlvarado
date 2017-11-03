@@ -35,7 +35,7 @@ public class Lab4_Francisco_Gabriel {
                     + "c.Registro de Jugardores\n"
                     + "d.Iniciar Partidad\n"
                     + "e.Listar Jugadores\n"
-                    + "f.Cargar partidad"
+                    + "f.Cargar partida"
                     + "g.Salir\n");
             if (opcion.equalsIgnoreCase("a")) {
                 String jugadores = "";
@@ -158,6 +158,55 @@ public class Lab4_Francisco_Gabriel {
                 
             }
             if (opcion.equalsIgnoreCase("d")) {
+                 String eliminar ="";
+              eliminar = JOptionPane.showInputDialog("MENU\n"
+                        + "a.Listar Magos\n"
+                        + "b.Listar Elgos\n"
+                        + "c.Listar Dragones\n"
+                        + "d.Listar Arqueros\n"
+                        + "e.Listar Brujas\n");
+                if (eliminar.equalsIgnoreCase("a")) {
+                    String l="";
+                    for (Magos a : ListMagos) {
+                        l += ListMagos.indexOf(a) + "" + ((Magos)a);
+                    }
+                    JOptionPane.showInputDialog(null, l);
+                  
+                }
+                if (eliminar.equalsIgnoreCase("b")) {
+                    String l="";
+                    for (Elfos a : ListElfos) {
+                        l += ListElfos.indexOf(a) + "" + ((Elfos)a);
+                    }
+                    JOptionPane.showInputDialog(null, l);
+                   
+                }
+                if (eliminar.equalsIgnoreCase("c")) {
+                    String l="";
+                    for (Dragones a : ListDragones) {
+                        l += ListDragones.indexOf(a) + "" + ((Dragones)a);
+                    }
+                    JOptionPane.showInputDialog(null, l);
+                    
+                  
+                }
+                  if (eliminar.equalsIgnoreCase("d")) {
+                    String l="";
+                    for (Arqueros a : ListArqueros) {
+                        l += ListArqueros.indexOf(a) + "" + ((Arqueros)a);
+                    }
+                    JOptionPane.showInputDialog(null, l);
+                 
+                }
+                if (eliminar.equalsIgnoreCase("e")) {
+                    String l="";
+                    for (Brujas a : ListBrujas) {
+                        l += ListBrujas.indexOf(a) + "" + ((Brujas)a);
+                    }
+                    JOptionPane.showInputDialog(null, l);
+                    
+                }
+                
                 
             }
 
