@@ -22,6 +22,7 @@ public class Lab4_Francisco_Gabriel {
     static ArrayList<Arqueros> ListArqueros = new ArrayList();
     static ArrayList<Brujas> ListBrujas = new ArrayList();
        static ArrayList<Jugador> jugadores=new ArrayList();
+       static ArrayList<Jugador>jugadores2 = new ArrayList();
     static ArrayList<Guerrero> guerreros = new ArrayList();
     
 
