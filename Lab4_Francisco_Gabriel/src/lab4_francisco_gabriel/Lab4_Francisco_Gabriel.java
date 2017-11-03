@@ -649,7 +649,7 @@ public class Lab4_Francisco_Gabriel {
     
     
     
-    public static void CrearJugador(){
+    public static void CrearJugador(int n){
         String nombre=JOptionPane.showInputDialog("Ingrese Nombre del Jugador");
         int dinero =Integer.parseInt(JOptionPane.showInputDialog("Ingrese cantidad de Dinero:"));
         for (Guerrero t : guerreros) {
@@ -673,6 +673,14 @@ public class Lab4_Francisco_Gabriel {
                 int cont=guerreros.indexOf(t);
               JOptionPane.showMessageDialog(null, cont+".- "+ t);  
             }
+        }
+        int pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la Poscicion del guerrero que desea: "));
+        if (n==1) {
+            jugadores.add(new Jugador(nombre, dinero, 0, guerreros.get(pos)));
+            guerreros.remove(pos);
+        }else if(n==2){
+            jugadores2.add(new Jugador(nombre, dinero, 0, guerreros.get(pos)));
+            guerreros.remove(pos);
         }
     }
 }

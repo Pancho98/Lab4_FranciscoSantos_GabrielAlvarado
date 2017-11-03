@@ -54,6 +54,17 @@ public class Magos extends Guerrero{
                 + "Salud: "+super.getSalud()+"\n"
                 + "Costo: "+super.getCosto();
     }
+
+    @Override
+    public double Atacar(Jugador j1, Jugador j2) {
+        int ataque1=0;
+        while (j1.getGuerrero().getSalud()>0 || j2.getGuerrero().getSalud()>0) {            
+            ataque1=j1.getGuerrero().getPoder()+(j2.getGuerrero().getPoder())/2;
+        }
+        return ataque1;
+    }
+
+    
     
     
 }

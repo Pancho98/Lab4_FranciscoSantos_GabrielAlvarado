@@ -9,7 +9,7 @@ package lab4_francisco_gabriel;
  *
  * @author Francisco Santos
  */
-public class Guerrero implements Complemento{
+public abstract class Guerrero {
     private String nombre;
     private int edad;
     private String nacimiento;
@@ -88,10 +88,7 @@ public class Guerrero implements Complemento{
         return "Guerrero{" + "nombre=" + nombre + '}';
     }
 
-    @Override
-    public void Atacar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public abstract double Atacar(Jugador j1, Jugador j2);
     
     
     
