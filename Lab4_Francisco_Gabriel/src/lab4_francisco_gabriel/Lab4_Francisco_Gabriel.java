@@ -1,10 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab4_francisco_gabriel;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
@@ -69,6 +65,13 @@ public class Lab4_Francisco_Gabriel {
         }
         
             
+=======
+public class Lab4_Francisco_Gabriel {
+
+    
+    public static void main(String[] args) {
+        
+>>>>>>> 2651ba23587113ad739fc8409997bd90385bb3a2
     }
     
 }
