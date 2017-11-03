@@ -48,7 +48,13 @@ public class Dragones extends Guerrero{
 
     @Override
     public String toString() {
-        return "Dragones{" + "color=" + color + ", raza=" + raza + '}';
+        return "Dragones\n"
+                +"Nombre: "+super.getNombre()+"\n"
+                +"Edad: "+super.getEdad()+"\n"
+                +"Lugar de Nacimiento: "+super.getNacimiento()+"\n"
+                + "Poder: "+super.getPoder()+"\n"
+                + "Salud: "+super.getSalud()+"\n"
+                + "Costo: "+super.getCosto();
     }
     
     
