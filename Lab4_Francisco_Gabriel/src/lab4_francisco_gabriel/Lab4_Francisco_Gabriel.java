@@ -27,7 +27,7 @@ public class Lab4_Francisco_Gabriel {
     static ArrayList <Guardar> Partidas = new ArrayList();
     
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
          String opcion = "";
         while (!opcion.equalsIgnoreCase("g")) {
             opcion = JOptionPane.showInputDialog("MENU\n"
@@ -155,7 +155,16 @@ public class Lab4_Francisco_Gabriel {
                 }
             }
             if (opcion.equalsIgnoreCase("c")) {
-                CrearJugador();
+                int n=0;
+                try {
+                      n=Integer.parseInt(JOptionPane.showInputDialog("Que jugador desear agregar 1 o 2"));
+                } catch (Exception e) {
+                    Evaluar(n);
+                }
+              
+              
+                
+                CrearJugador(n);
                 
             }
             if (opcion.equalsIgnoreCase("e")) {
@@ -683,6 +692,14 @@ public class Lab4_Francisco_Gabriel {
             jugadores2.add(new Jugador(nombre, dinero, 0, guerreros.get(pos)));
             guerreros.remove(pos);
         }
+    }
+    
+    public static int Evaluar(int n) throws Exception
+    {
+        if (n!=1||n!=2) {
+            throw new Exception("El numero no puede ser diferente de 1 o 2");
+        }
+        return 0;
     }
 }
  
