@@ -682,6 +682,8 @@ public class Lab4_Francisco_Gabriel {
             if (t instanceof Brujas) {
                 int cont=guerreros.indexOf(t);
               JOptionPane.showMessageDialog(null, cont+".- "+ t);  
+            }else{
+                JOptionPane.showMessageDialog(null, "No hay en exitencia mas guerreros");
             }
         }
         int pos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la Poscicion del guerrero que desea: "));
