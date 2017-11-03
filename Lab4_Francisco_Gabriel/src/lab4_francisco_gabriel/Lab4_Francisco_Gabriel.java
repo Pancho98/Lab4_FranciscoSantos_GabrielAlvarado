@@ -682,6 +682,8 @@ public class Lab4_Francisco_Gabriel {
         }else if(n==2){
             jugadores2.add(new Jugador(nombre, dinero, 0, guerreros.get(pos)));
             guerreros.remove(pos);
+        }else{
+            JOptionPane.showMessageDialog(null, "No se puede agregar algo diferente de un jugador 1 o 2");
         }
     }
 }
